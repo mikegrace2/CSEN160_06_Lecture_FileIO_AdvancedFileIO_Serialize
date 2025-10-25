@@ -1,0 +1,1 @@
+Audio files can be stored in a variety of formats such as wav, wma, mp3, aiff, au etc 
