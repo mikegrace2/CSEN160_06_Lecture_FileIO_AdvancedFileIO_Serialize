@@ -25,6 +25,14 @@ public class A_FileReaderExample {
 			System.err.print("File could not be found" + e.getMessage());
 		} catch (IOException e) {
 			System.err.println("IOException" + e.getMessage());
-		}
+		}finally{
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            } catch (IOException e) {
+                System.err.println("Failed to close the reader: " + e.getMessage());
+            }
+        }
 	}
 }

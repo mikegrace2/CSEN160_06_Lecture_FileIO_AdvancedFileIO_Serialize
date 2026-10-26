@@ -15,7 +15,7 @@ public class B_FileReaderFileWriterExample {
 		
 		try {
 			reader = new FileReader(new File("info.txt"));
-			writer = new FileWriter(new File("copyOfInfo.txt"));
+			writer = new FileWriter(new File("C:\\Users\\mschi\\Desktop\\copyOfInfo.txt"));
 
 			long start = System.currentTimeMillis();
 			

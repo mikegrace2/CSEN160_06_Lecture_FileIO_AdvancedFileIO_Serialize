@@ -33,7 +33,6 @@ public class AudioPlayer implements Serializable, LineListener {
 
 		// line listener causes program to exit after play is completed.
 		clip.addLineListener(this);
-		
 
 		// open the audio stream and start playing the clip
 		clip.open(stream);
