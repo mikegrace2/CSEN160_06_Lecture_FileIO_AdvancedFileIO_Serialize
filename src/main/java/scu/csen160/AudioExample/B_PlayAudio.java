@@ -1,4 +1,4 @@
-package scu.csen160.AudioMixer.A_AudioMixer;
+package scu.csen160.AudioExample;
 
 import java.io.File;
 import java.io.Serializable;
@@ -11,7 +11,7 @@ import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineListener;
 
 @SuppressWarnings("serial")
-public class AudioPlayer implements Serializable, LineListener {
+public class B_PlayAudio implements Serializable, LineListener {
 	public static final int HEADER_SIZE = 44;
 	
 	private File audioFile;
@@ -49,7 +49,7 @@ public class AudioPlayer implements Serializable, LineListener {
 			myScan = new Scanner(System.in);
 			
 			// Create player
-			AudioPlayer readyPlayerOne = new AudioPlayer();
+			B_PlayAudio readyPlayerOne = new B_PlayAudio();
 			
 			// Play a wave file
 			System.out.print("Enter name of file to play: ");

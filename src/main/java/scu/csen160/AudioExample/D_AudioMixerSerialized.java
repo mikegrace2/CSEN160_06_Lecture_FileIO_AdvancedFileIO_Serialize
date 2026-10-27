@@ -1,4 +1,4 @@
-package scu.csen160.AudioMixer.D_AudioMixer;
+package scu.csen160.AudioExample;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,7 +15,7 @@ import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineListener;
 
 @SuppressWarnings("serial")
-public class AudioMixerSerialized implements Serializable {
+public class D_AudioMixerSerialized implements Serializable {
 	public static final int HEADER_SIZE = 44;
 	
 	private File audioFile;
@@ -52,7 +52,7 @@ public class AudioMixerSerialized implements Serializable {
 			myScan = new Scanner(System.in);
 			
 			// Create player
-			AudioMixerSerialized readyPlayerOne = new AudioMixerSerialized();
+			D_AudioMixerSerialized readyPlayerOne = new D_AudioMixerSerialized();
 			
 			// Play a wave file
 			System.out.print("Enter name of file to play: ");
@@ -69,11 +69,11 @@ public class AudioMixerSerialized implements Serializable {
 
 			// Deserialize readyPlayerOne into readyPlayerTwo -----------------------------------------
 			System.out.println("Create new AudioMixer object called readyPlayerTwo");
-			AudioMixerSerialized readyPlayerTwo = new AudioMixerSerialized();
+			D_AudioMixerSerialized readyPlayerTwo = new D_AudioMixerSerialized();
 			System.out.println("Initialize readyPlayerTwo fields from file readyPlayerOne.dat");
 			FileInputStream fileIn = new FileInputStream("serialized/readyPlayerOne.dat");
 			ObjectInputStream objectIn = new ObjectInputStream(fileIn);
-			readyPlayerTwo = (AudioMixerSerialized) objectIn.readObject();
+			readyPlayerTwo = (D_AudioMixerSerialized) objectIn.readObject();
 			objectIn.close();
 			
 			// Finally play the wave file - still playable!

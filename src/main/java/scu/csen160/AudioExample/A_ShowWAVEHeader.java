@@ -1,4 +1,4 @@
-package scu.csen160.AudioMixer.B_AudioMixer;
+package scu.csen160.AudioExample;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.math.BigInteger;
 
 @SuppressWarnings("serial")
-public class ShowWAVEHeader implements Serializable {
+public class A_ShowWAVEHeader implements Serializable {
 	public static final int HEADER_SIZE    = 44;
 	private static final int LITTLE_ENDIAN =  0;
 	private static final int BIG_ENDIAN    =  1;
@@ -163,7 +163,7 @@ public class ShowWAVEHeader implements Serializable {
 	public static void main(String[] args) {
 		try {		
 			// Create AudioMixer
-			ShowWAVEHeader audioMixer = new ShowWAVEHeader();
+			A_ShowWAVEHeader audioMixer = new A_ShowWAVEHeader();
 			
 			// Open blues.wav
 			File musicFile = new File("audio/blues.wav");

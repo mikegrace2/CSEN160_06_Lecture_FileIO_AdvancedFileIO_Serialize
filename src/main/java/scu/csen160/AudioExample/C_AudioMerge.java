@@ -1,4 +1,4 @@
-package scu.csen160.AudioMixer.C_AudioMixer;
+package scu.csen160.AudioExample;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -11,14 +11,8 @@ import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.LineEvent;
-import javax.sound.sampled.LineListener;
-
 @SuppressWarnings("serial")
-public class WAVEMerge implements Serializable {
+public class C_AudioMerge implements Serializable {
 	public static final int HEADER_SIZE    = 44;
 	private static final int LITTLE_ENDIAN =  0;
 	private static final int BIG_ENDIAN    =  1;
@@ -195,7 +189,7 @@ public class WAVEMerge implements Serializable {
 			myScan = new Scanner(System.in);
 			
 			// Create AudioMixer
-			WAVEMerge audioMixer = new WAVEMerge();
+			C_AudioMerge audioMixer = new C_AudioMerge();
 			
 			String audio1="audio/blues.wav";
 			String audio2="audio/groovy.wav";
