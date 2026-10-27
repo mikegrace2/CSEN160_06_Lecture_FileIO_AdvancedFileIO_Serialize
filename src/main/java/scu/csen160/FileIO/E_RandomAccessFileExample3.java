@@ -1,4 +1,4 @@
-package scu.csen160;
+package scu.csen160.FileIO;
 
 import java.io.File;
 import java.io.IOException;

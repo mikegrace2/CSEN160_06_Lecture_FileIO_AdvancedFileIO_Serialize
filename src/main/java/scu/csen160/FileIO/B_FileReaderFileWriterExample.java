@@ -1,4 +1,4 @@
-package scu.csen160;
+package scu.csen160.FileIO;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -15,7 +15,8 @@ public class B_FileReaderFileWriterExample {
 		
 		try {
 			reader = new FileReader(new File("info.txt"));
-			writer = new FileWriter(new File("C:\\Users\\mschi\\Desktop\\copyOfInfo.txt"));
+			//writer = new FileWriter(new File("C:\\Users\\mschi\\Desktop\\copyOfInfo.txt"));
+			writer = new FileWriter(new File("copyOfInfo.txt"));
 
 			long start = System.currentTimeMillis();
 			

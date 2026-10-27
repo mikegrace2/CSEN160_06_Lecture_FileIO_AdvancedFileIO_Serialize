@@ -1,4 +1,4 @@
-package scu.csen160;
+package scu.csen160.FileIO;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,7 +11,7 @@ public class D_ScannerExample {
 			scanner = new Scanner(new File("info_short.txt"));
 
 			while (scanner.hasNext()) {
-				System.out.print(scanner.next());
+				System.out.println(scanner.next());
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
